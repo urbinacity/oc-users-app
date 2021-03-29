@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  doc_container_1:
+    build: ./users-ui
+    ports:
+      - "80:80"
+  doc_container_2:
+    build: ./users-api
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./users-api/storage:/usr/src/app/storage

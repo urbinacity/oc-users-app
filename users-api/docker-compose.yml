@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  doc_container_2:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./storage:/usr/src/app/storage
